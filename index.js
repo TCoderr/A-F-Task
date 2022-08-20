@@ -1,3 +1,62 @@
+/*
+//Soru 1) 
+
+//Get Yöntemi ile)
+var url = "https://www.tcmb.gov.tr/kurlar/202110/01102021.xml";
+var xhr = new XMLHttpRequest();
+xhr.open("GET", url);
+xhr.setRequestHeader("Accept", "application/xml");
+
+xhr.onreadystatechange = function () {
+   if (xhr.readyState === 4) {
+      console.log(xhr.status);
+      console.log(xhr.responseText);
+   }};
+xhr.send();
+
+//Soru 1)
+//Post yöntemi ile:
+var url = "https://www.tcmb.gov.tr/kurlar/202110/01102021.xml";
+var xhr = new XMLHttpRequest();
+xhr.open("POST", url);
+xhr.setRequestHeader("Accept", "application/xml");
+xhr.setRequestHeader("Content-Type", "");
+xhr.setRequestHeader("Content-Length", "0");
+xhr.onreadystatechange = function () {
+   if (xhr.readyState === 4) {
+      console.log(xhr.status);
+      console.log(xhr.responseText);
+   }};
+xhr.send();
+
+*/
+
+
+/*
+//Soru 2
+Soru 2)
+Mass Update 
+İzniniz olması koşuluyla, güncel olmayan bilgilere sahip birden fazla kaydı bulmak ve bu kayıtların tüm alan değerlerini tek tek güncellemek 
+yerine aynı anda güncellemek için Mass Update işlevini kullanabilirsiniz.
+
+Mass Update, bir kayıttaki birden çok satırı tek tek güncellemek yerine tek denemede güncellemek için kullanılır. 
+Örneğin, bir kayıttaki birden çok değeri bir denemede değiştirmek istiyorsanız, bu durumda Mass Update kullanılır. 
+Mass Update  iki teknik yardımıyla yapılır.
+1.Saved Mass Updates.
+2. Script Mass Update.
+
+Schedule Script
+Schedule script, gelecekte yinelenen bir temelde işlemek için kullanılacak bir kez göndermek için kullanılabilir ve ayrıca isteğe bağlı komut 
+dosyalarını dağıtım kaydına göndermek veya bir API kullanarak başka bir komut dosyasından göndermek için kullanılabilir. 
+Schedule script, çok sayıda veriyi/kaydı işlemek için SuiteCloud İşlemcileri ile işlenen NetSuite'teki sunucu tarafı komut dosyalarıdır.
+Benzerlikleri ve Farklılıkları:
+İki script türünde de toplu olarak kayıtları güncelleyebilir fakat Schedule Script bunu ileri bir zamanda planlanmış bir şekilde 
+yapabilmektedir.
+Güncel olmayan bilgilerle birden fazla kaydı bulmak ve bu kayıtların tüm alan değerlerini aynı anda güncellemek için 
+Mass Update işlevi kullanılabilir.
+*/
+
+/*Soru 3
 function group(oranArr,tutarArr,kodArr){
 
    //Toplama işleminden sonra arraydeki verileri kopyalamak için yeni arrayler oluşturuyoruz.
@@ -67,4 +126,4 @@ var tutar =  [10, 15, 12, 23, 30, 43];
 //Bu sebeple verileri string olarak tanımladım.
 var kod =  ['0071', '0071', '0073', '0073', '0071', '0071'];
 
-group(oran, tutar, kod);
+group(oran, tutar, kod); */ 
